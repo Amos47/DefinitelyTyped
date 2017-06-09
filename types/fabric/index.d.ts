@@ -1759,11 +1759,6 @@ export class Group {
 
 interface IImageOptions extends IObjectOptions {
 	/**
-	 * crossOrigin value (one of "", "anonymous", "allow-credentials")
-	 */
-	crossOrigin: string;
-
-	/**
 	 * AlignX value, part of preserveAspectRatio (one of "none", "mid", "min", "max")
 	 * This parameter defines how the picture is aligned to its viewport when image element width differs from image width.
 	 */
@@ -2243,6 +2238,11 @@ interface IObjectOptions {
 	 * Not used by fabric, just for convenience
 	 */
 	data?: any;
+
+	/**
+	 * crossOrigin value (one of "", "anonymous", "allow-credentials")
+	 */
+	crossOrigin?: string;
 }
 export interface Object extends IObservable<Object>, IObjectOptions, IObjectAnimation<Object> {}
 export class Object {
