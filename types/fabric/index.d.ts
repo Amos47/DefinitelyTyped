@@ -1011,7 +1011,7 @@ export class StaticCanvas {
 	 * @param {(String|fabric.Pattern)} backgroundColor Color or pattern to set background color to
 	 * @param {Function} callback Callback to invoke when background color is set
 	 */
-	setBackgroundColor(backgroundColor: string|Pattern, callback: Function): StaticCanvas;
+	setBackgroundColor(backgroundColor: string|Pattern, callback?: Function): StaticCanvas;
 
 	/**
 	 * Returns canvas width (in px)
